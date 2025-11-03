@@ -1,5 +1,8 @@
 // Canvas Petal Background
-const canvas = document.getElementById("fallingPetals");
+
+
+document.addEventListener("DOMContentLoaded", () => {
+ const canvas = document.getElementById("fallingPetals");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -62,4 +65,4 @@ flower.addEventListener("click", () => {
     content.classList.remove("hidden");
   }, 1500);
 });
-
+});
